@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rush</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="img/Log.png" alt="Loto">
+        <nav>
+            <a href="#">Login (Admin)</a>
+            <a href="#">Login (User)</a>
+        </nav>
+    </header>
+
+        <section class="carousel">
+            <div class="carousel-container">
+                <img src="img/N1.jpg" alt="Image 1">
+                <img src="img/N2.jpg" alt="Image 2">
+                <img src="img/N3.jpg" alt="Image 3">
+                <img src="img/N4.jpg" alt="Image 4">
+                <img src="img/N5.jpg" alt="Image 5">
+                <img src="img/N6.jpg" alt="Image 6">
+                <img src="img/N1.jpg" alt="Image 1">
+                <img src="img/N2.jpg" alt="Image 2">
+                <img src="img/N3.jpg" alt="Image 3">
+            </div>
+            <button class="prev">&#10094;</button>
+            <button class="next">&#10095;</button>
+        </section>
+
+        <section class="content">
+            <div class="text-container">
+                <h2>Welcome to the Simple Game Website!</h2>
+                <p>Invite your friends, play fun games with them.
+                Challenge yourself and have fun!</p>
+            </div>
+            <div class="slide-show-container">
+                <div class="slide-show">
+                    <img src="img/memo_01.png" alt="Slide 1">
+                    <img src="img/memo_02.jpg" alt="Slide 2">
+                    <img src="img/memo_03.jpg" alt="Slide 3">
+                    <img src="img/memo_04.jpg" alt="Slide 4">
+                    <img src="img/memo_05.png" alt="Slide 5">
+                    <img src="img/memo_06.jpg" alt="Slide 6">
+                    <img src="img/memo_07.jpg" alt="Slide 7">
+                    <img src="img/memo_08.jpg" alt="Slide 8">
+                    <img src="img/memo_09.jpg" alt="Slide 9">
+                    <img src="img/memo_10.jpg" alt="Slide 10">
+                    <img src="img/memo_11.jpg" alt="Slide 11">
+                    <img src="img/memo_12.jpg" alt="Slide 12">
+                    <img src="img/memo_13.png" alt="Slide 13">
+                    <img src="img/memo_14.png" alt="Slide 14">
+                    <img src="img/memo_15.jpg" alt="Slide 15">
+                    <img src="img/memo_16.jpg" alt="Slide 16">
+                    <img src="img/memo_17.jpg" alt="Slide 17">
+                    <img src="img/memo_18.jpg" alt="Slide 18">
+                    <img src="img/memo_19.jpg" alt="Slide 19">
+                </div>
+                <button class="prev-slide">&#10094;</button>
+                <button class="next-slide">&#10095;</button>
+            </div>
+        </section>
+
+        <div class="modal hidden">
+            <h2>Request Account</h2>
+            <form action="request.php" method="post">
+                <label for="name">Full Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="grade">Grade & Section:</label>
+                <input type="text" id="grade" name="grade" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <button type="submit">Submit</button>
+            </form>
+            <button class="modal-close">X</button>
+        </div>
+        
+        <button class="request-btn">Request Account</button>
+        
+    
+    <footer>
+        <p>&copy; Simple Game Website 2024</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
