@@ -2,6 +2,8 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
+  height: 100vh;
+  background-image: linear-gradient(to right, #C00, #90EE90, #F0F0F0);
 }
 
 header {
@@ -9,7 +11,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem 2rem;
-  background-image: linear-gradient(to right, #ffc3a0, #f1eff1, #F8D082);
+  background-image: linear-gradient(to right, #DDD, #CC0000, #333);
 }
 
 header img {
@@ -26,6 +28,10 @@ header nav a {
   background-color: #e7d5b0;
   text-decoration: none;
   color: #333;
+}
+
+img {
+  border-radius: 8px;
 }
 
 .carousel {
@@ -98,6 +104,7 @@ header nav a {
 .slide-show {
   display: flex;
   transition: transform 0.5s ease;
+  gap: 5px;
 }
 
 .slide-show img {
@@ -205,4 +212,58 @@ header nav a {
   border: none;
   font-size: 1.5rem;
   cursor: pointer;
+}
+
+.toggle-container {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.toggle-switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 20px;
+  background: #CCC;
+  border-radius: 18px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+
+.toggle-switch:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  transform: translateY(-50%);
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: #867878;
+  -webkit-transition: .4s ease;
+  transition: all .4s ease;
+}
+
+.toggle-text {
+  display: none;
+}
+
+body.dark {
+  background:#414040;
+  color: #eee;
+}
+
+.toggle-switch:before.dark-bg {
+  background-color: #333;
+}
+
+body.dark .toggle-switch:before{
+  left: 24px;
+}
+footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
