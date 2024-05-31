@@ -175,6 +175,13 @@ img {
   }
 }
 
+button.request-btn{
+  cursor: pointer;
+  border-radius: 5px;
+  border: 2px solid #CCC;
+  float: right;
+}
+
 .modal {
   position: fixed;
   top: 50%;
@@ -185,6 +192,7 @@ img {
   box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
   z-index: 100;
   display: none;
+  border-radius: 15px;
 }
 
 .modal.hidden {
@@ -252,7 +260,7 @@ img {
 
 body.dark {
   background:#414040;
-  color: #eee;
+  color: #ffffff;
 }
 
 .toggle-switch:before.dark-bg {
@@ -262,6 +270,12 @@ body.dark {
 body.dark .toggle-switch:before{
   left: 24px;
 }
+
+body.dark .modal{
+  background: #CCC;
+  border-radius: 15px;
+}
+
 footer {
   display: flex;
   justify-content: center;
