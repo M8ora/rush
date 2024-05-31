@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', () => {
     let slideInterval = null;
     let slideShowCurrentIndex = 0;
     const totalSlideShowImages = slideShowImages.length;
-    const imagesToShow = 2.5;
+    const imagesToShow = 1.6;
   
     // Modal 
     requestBtn.addEventListener('click', () => {
